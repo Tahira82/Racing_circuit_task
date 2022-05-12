@@ -1,0 +1,23 @@
+
+//TASK 2
+//It takes one hour and fifteen minutes to complete a racing circuit if the short cut is not taken. If the short cut is taken the circuit can be completed in less than half hour. In the current race short cuts are not allowed.
+//You have to write a program that detects if the driver has taken a short cut or not. Your program will take the time input in hours, minutes and. Output should be 1 if he has taken a shortcut. 
+
+#include <iostream>//pre-processor directives
+using namespace std;//including the namespace standard library
+int main()//function header // function body
+{
+	bool hours=0,minutes=0,short_cut=0,circuit_completed=0;//declaration and initialization of four variables that can have value one or zero
+	cout<<"Enter the hours;input 1 if time is less than half hour,else input 0"<<endl;//check hours
+	cin>>hours;//input by user
+	cout<<hours<<endl;
+	cout<<"Enter the minutes;input 1 if minutes are fifteen,else input 0"<<endl;//check minutes
+	cin>>minutes;
+	cout<<minutes<<endl;
+	cout<<"Input if circuit is completed or not;If yes:input 1;else input 0"<<endl;//check circuit completion//make cases
+	cin>>circuit_completed;
+	cout<<circuit_completed<<endl;
+	short_cut=((circuit_completed)||((hours)&&(minutes)));//condition applied
+	cout<<"Tell if the shortcut is taken,1 if taken,else 0\n"<<short_cut<<endl;//output the program solution
+	system ("pause");//display console and still
+	return 0;//returns system to the start
